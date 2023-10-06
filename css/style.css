@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+/* Cabeçalho */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.searchBox img {
+    margin: 10px 5px 5px 5px;
+    width: 20px;
+}
+
+.searchBox input {
+    border: none;
+    height: 25px;
+    width: 200px;
+    margin-right: 5px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.searchBox input:focus {
+    outline: none;
+}
+
+.searchBox:hover,
+.searchBox:hover > input {
+    background: rgb(236, 236, 236);
+}
+
+.logo img {
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 15px;
+}
+
+.tenis span a {
+    padding: 20px 12px;
+}
+
+.tenis:hover > .sneakers,
+.sneakers:hover {
+    display: flex;
+    border-top: 2px solid rgb(224, 224, 224);
+    border-bottom: 2px solid rgb(224, 224, 224);
+    
+}
+
+.sneakers {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 58px;
+    left: 0;
+}
+
+.jordan:hover > .secondary,
+.jordan:hover > .third,
+.jordan:hover > #jordan {
+    display: block;
+}
+
+.primary {
+    width: 300px;
+}
+
+.secondary {
+    display: none;
+    width: 500px;
+    border-left: 2px solid rgb(224, 224, 224);
+}
+
+.third {
+    display: block;
+}
+
+.account:hover > .account2 {
+    display: flex;
+}
+
+#account {
+    padding: 12px;
+}
+
+.account2 {
+    display: none;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    width: 130px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+.account .account2 a {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(179, 179, 179);
+}
+
+ul li {
+    list-style: none;
+    margin: 15px 0px;
+}
+
+li:hover {
+    cursor: pointer;
+}
