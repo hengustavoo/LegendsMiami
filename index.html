@@ -30,24 +30,24 @@
             <span>
               <a href="">Tênis</a>
             </span>
-            <div class="sneakers" onmouseout="backWhiteOut()">
+            <div class="sneakers" onmouseout="backWhiteOut(), subClose()">
               <div class="primary">
                 <ul>
-                  <li class="jordan">Air Jordan</li>
-                  <li class="nike">Nike</li>
-                  <li class="yeezy">Yeezy</li>
-                  <li class="adidas">Adidas</li>
-                  <li>Off-White</li>
-                  <li class="newbalance">New Balance</li>
-                  <li class="others">Outros</li>
-                  <li>Ofertas</li>
-                  <li>Feminino</li>
-                  <li>Maculino</li>
-                  <li>Infantil</li>
+                  <li class="jordan" onmouseover="categoriesIn('.jordanC')" onmouseout="categoriesOut('.jordanC')">Air Jordan</li>
+                  <li class="nike" onmouseover="categoriesIn('#nike')" onmouseout="categoriesOut('#nike')">Nike</li>
+                  <li class="yeezy" onmouseover="categoriesIn('#yeezy')" onmouseout="categoriesOut('#yeezy')">Yeezy</li>
+                  <li class="adidas" onmouseover="categoriesIn('#adidas')" onmouseout="categoriesOut('#adidas')">Adidas</li>
+                  <li onmouseover="subClose()">Off-White</li>
+                  <li class="newbalance" onmouseover="categoriesIn('#newbalance')" onmouseout="categoriesOut('#newbalance')">New Balance</li>
+                  <li class="others" onmouseover="categoriesIn('#others')" onmouseout="categoriesOut('#others')">Outros</li>
+                  <li onmouseover="subClose()">Ofertas</li>
+                  <li onmouseover="subClose()">Feminino</li>
+                  <li onmouseover="subClose()">Maculino</li>
+                  <li onmouseover="subClose()">Infantil</li>
                 </ul>
               </div>
               <div class="secondary">
-                <ul id="jordan" style="display: none;">
+                <ul class="jordanC" onmouseover="categoriesIn('.jordanC')" onmouseout="categoriesOut('.jordanC')">
                   <li>Air Jordan</li>
                   <li>Air Jordan 1</li>
                   <li>Air Jordan 2</li>
@@ -59,7 +59,7 @@
                   <li>Air Jordan 8</li>
                   <li>Air Jordan 9</li>
                 </ul>
-                <ul id="nike" style="display: none;">
+                <ul id="nike" onmouseover="categoriesIn('#nike')" onmouseout="categoriesOut('#nike')">
                   <li>Nike</li>
                   <li>Off-White</li>
                   <li>Dunk</li>
@@ -72,7 +72,7 @@
                   <li>LeBron</li>
                   <li>Lançamentos</li>
                 </ul>
-                <ul id="yeezy" style="display: none;">
+                <ul id="yeezy" onmouseover="categoriesIn('#yeezy')" onmouseout="categoriesOut('#yeezy')">
                   <li>Yeezy</li>
                   <li>Yeezy Boost 350</li>
                   <li>Yeezy Boost 380</li>
@@ -84,7 +84,7 @@
                   <li>Yeezy Slides</li>
                   <li>Yeezy Foam Runner</li>
                 </ul>
-                <ul id="adidas" style="display: none;">
+                <ul id="adidas" onmouseover="categoriesIn('#adidas')" onmouseout="categoriesOut('#adidas')">
                   <li>Adidas</li>
                   <li>Yeezy</li>
                   <li>Pharrell</li>
@@ -92,16 +92,16 @@
                   <li>Ultra Boost</li>
                   <li>Lançamentos</li>
                 </ul>
-                <ul id="newbalance" style="display: none;">
+                <ul id="newbalance" onmouseover="categoriesIn('#newbalance')" onmouseout="categoriesOut('#newbalance')">
                   <li>New Balance</li>
                   <li>New Balance 327</li>
                   <li>New Balance 550</li>
                   <li>New Balance 990</li>
                 </ul>
-                <ul id="others" style="display: none;">
+                <ul id="others" onmouseover="categoriesIn('#others')" onmouseout="categoriesOut('#others')">
                   <li>Outros</li>
                   <li>Asics</li>
-                  <li>A Bathing Ape</li>
+                  <li>Bape</li>
                   <li>Converse</li>
                   <li>Puma</li>
                   <li>Reebok</li>
@@ -109,7 +109,7 @@
                 </ul>
               </div>
               <div class="third">
-                <ul id="jordan" style="display: none;">
+                <ul class="jordanC">
                   <li>Air Jordan 10</li>
                   <li>Air Jordan 11</li>
                   <li>Air Jordan 12</li>

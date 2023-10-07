@@ -2,4 +2,4 @@
 
 Site de comercio de tênis.
 
-Por enquanto somente HTML e CSS
+Por enquanto somente HTML, CSS e JS para estilização
