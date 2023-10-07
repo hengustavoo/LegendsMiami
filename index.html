@@ -5,29 +5,32 @@
     <title>Legends Miami</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"> </script>
+    <script src="functions/funtions.js"></script>
   </head>
   <body>
     <!-- Fixeds -->
     <div class="fixeds"></div>
     <!-- Header -->
     <section class="header">
-        <form class="searchBox">
-          <a class="searchBtn" href="#">
-            <img src="imgs/lupa.svg" alt="lupa" width="25px" />
-          </a>
-          <input type="text" class="searchText" placeholder="Procurar produtos..."/>
-        </form>
+        <div class="searchDiv">
+          <form class="searchBox">
+            <a class="searchBtn" href="#">
+              <img src="imgs/lupa.svg" alt="lupa" width="25px" />
+            </a>
+            <input type="text" class="searchText" placeholder="Procurar produtos..."/>
+          </form>
+        </div>
         <div class="logo">
           <a href="#">
             <img src="imgs/logoLM.png" alt="legends miami" href="index.html"/>
           </a>
         </div>
         <div class="menu">
-          <div class="tenis">
+          <div class="tenis" onmouseover="backWhiteIn()" onmouseout="backWhiteOut()">
             <span>
               <a href="">Tênis</a>
             </span>
-            <div class="sneakers">
+            <div class="sneakers" onmouseout="backWhiteOut()">
               <div class="primary">
                 <ul>
                   <li class="jordan">Air Jordan</li>
@@ -133,7 +136,11 @@
         </div>
     </section>
     <!-- Main -->
-    <section class="main"></section>
+    <section class="main">
+      <div class="banner">
+        <img src="imgs/jordan.jpg" alt="jordan" style="width: 100%;">
+      </div>
+    </section>
     <!-- Footer -->
     <section class="footer"></section>
   </body>
