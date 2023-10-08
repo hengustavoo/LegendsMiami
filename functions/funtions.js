@@ -20,3 +20,8 @@ function subClose() {
     $('.secondary').css('display' ,'none')
     $('.third').css('display' ,'none')
 }
+
+window.addEventListener("scroll", () => {
+    let header = document.querySelector(".header")
+    header.classList.toggle('scrolling', window.scrollY > 1080)
+})

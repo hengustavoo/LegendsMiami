@@ -21,6 +21,10 @@ body {
     transition: 1s;
 }
 
+.header.scrolling {
+    background: white!important;
+}
+
 .searchDiv {
     width: 260px;
 }
