@@ -7,9 +7,8 @@ function backWhiteOut() {
 }
 
 function categoriesIn(x) {
-    $(x).css('display' ,'block')
-    $('.secondary').css('display' ,'block')
-    $('.third').css('display' ,'block')
+    $(x).css('display' ,'flex')
+    $('.secondary').css('display' ,'flex')
 }
 
 function categoriesOut(x) {
@@ -18,7 +17,6 @@ function categoriesOut(x) {
 
 function subClose() {
     $('.secondary').css('display' ,'none')
-    $('.third').css('display' ,'none')
 }
 
 window.addEventListener("scroll", () => {

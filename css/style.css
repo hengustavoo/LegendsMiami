@@ -127,25 +127,34 @@ body {
 
 .primary {
     width: 300px;
+    padding-left: 30px;
+    padding-top: 30px;
     animation-duration: 1s;
     animation-name: fadein;
 }
 
 .secondary {
     display: none;
-    width: 500px;
+    width: 1500px;
+    padding-left: 30px;
+    padding-top: 30px;
+    max-height: 580px;
     border-left: 2px solid rgb(224, 224, 224);
     animation-duration: 1s;
     animation-name: fadein;
 }
 
-.secondary ul {
-    animation-duration: 1s;
-    animation-name: fadein;
+.sub {
+    flex-direction: column;
 }
 
-.third ul{
-    display: none;
+.jordanC {
+    display: flex;
+    width: calc(100% - 700px);
+    flex-flow: column wrap;
+}
+
+.secondary ul {
     animation-duration: 1s;
     animation-name: fadein;
 }
@@ -195,9 +204,14 @@ a:hover {
     color: rgb(179, 179, 179);
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 ul li {
     list-style: none;
-    padding: 12px;
+    padding-bottom: 20px;
 }
 
 li:hover {
