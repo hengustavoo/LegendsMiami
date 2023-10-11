@@ -5,7 +5,7 @@
     <title>Legends Miami</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"> </script>
-    <script src="functions/funtions.js"></script>
+    <script src="functions/index.js"></script>
   </head>
   <body>
     <!-- Fixeds -->
@@ -33,16 +33,16 @@
             <span>
               <a href="">Tênis</a>
             </span>
-            <div class="sneakers" onmouseout="backWhiteOut(), subClose()">
+            <div class="sneakers" onmouseout="backWhiteOut()">
               <div class="primary">
                 <ul>
-                  <li class="jordan" onmouseover="categoriesIn('.jordanC')" onmouseout="categoriesOut('.jordanC')">Air Jordan</li>
-                  <li class="nike" onmouseover="categoriesIn('#nike')" onmouseout="categoriesOut('#nike')">Nike</li>
-                  <li class="yeezy" onmouseover="categoriesIn('#yeezy')" onmouseout="categoriesOut('#yeezy')">Yeezy</li>
-                  <li class="adidas" onmouseover="categoriesIn('#adidas')" onmouseout="categoriesOut('#adidas')">Adidas</li>
+                  <li class="pri jP" onclick="active()" onmouseover="visible('.jC', this)">Air Jordan</li>
+                  <li class="pri nP" onclick="active()" onmouseover="visible('.nC', this)">Nike</li>
+                  <li class="pri yP" onclick="active()" onmouseover="visible('.yC', this)">Yeezy</li>
+                  <li class="pri aP" onclick="active()" onmouseover="visible('.aC', this)">Adidas</li>
                   <li onmouseover="subClose()">Off-White</li>
-                  <li class="newbalance" onmouseover="categoriesIn('#newbalance')" onmouseout="categoriesOut('#newbalance')">New Balance</li>
-                  <li class="others" onmouseover="categoriesIn('#others')" onmouseout="categoriesOut('#others')">Outros</li>
+                  <li class="pri nbP" onclick="active()" onmouseover="visible('.nbC', this)">New Balance</li>
+                  <li class="pri oP" onclick="active()" onmouseover="visible('.oC', this)">Outros</li>
                   <li onmouseover="subClose()">Ofertas</li>
                   <li onmouseover="subClose()">Feminino</li>
                   <li onmouseover="subClose()">Maculino</li>
@@ -50,7 +50,7 @@
                 </ul>
               </div>
               <div class="secondary">
-                <ul class="sub jordanC" onmouseout="categoriesOut('.jordanC')">
+                <ul class="sub jC">
                   <li><u>Air Jordan</u></li>
                   <li>Air Jordan 1</li>
                   <li>Air Jordan 2</li>
@@ -68,7 +68,7 @@
                   <li>Air Jordan 14</li>
                   <li>Lançamentos</li>
                 </ul>
-                <ul class="sub" id="nike" onmouseout="categoriesOut('#nike')">
+                <ul class="sub nC">
                   <li><u>Nike</u></li>
                   <li>Off-White</li>
                   <li>Dunk</li>
@@ -81,7 +81,7 @@
                   <li>LeBron</li>
                   <li>Lançamentos</li>
                 </ul>
-                <ul class="sub" id="yeezy" onmouseout="categoriesOut('#yeezy')">
+                <ul class="sub yC">
                   <li><u>Yeezy</u></li>
                   <li>Yeezy Boost 350</li>
                   <li>Yeezy Boost 380</li>
@@ -93,7 +93,7 @@
                   <li>Yeezy Slides</li>
                   <li>Yeezy Foam Runner</li>
                 </ul>
-                <ul class="sub" id="adidas" onmouseout="categoriesOut('#adidas')">
+                <ul class="sub aC">
                   <li><u>Adidas</u></li>
                   <li>Yeezy</li>
                   <li>Pharrell</li>
@@ -101,13 +101,13 @@
                   <li>Ultra Boost</li>
                   <li>Lançamentos</li>
                 </ul>
-                <ul class="sub" id="newbalance" onmouseout="categoriesOut('#newbalance')">
+                <ul class="sub nbC">
                   <li><u>New Balance</u></li>
                   <li>New Balance 327</li>
                   <li>New Balance 550</li>
                   <li>New Balance 990</li>
                 </ul>
-                <ul class="sub" id="others" onmouseout="categoriesOut('#others')">
+                <ul class="sub oC">
                   <li><u>Outros</u></li>
                   <li>Asics</li>
                   <li>Bape</li>

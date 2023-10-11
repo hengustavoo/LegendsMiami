@@ -110,12 +110,12 @@ body {
     animation-name: fadein;
 }
 
-.jordanC,
-#yeezy,
-#nike,
-#adidas,
-#newbalance,
-#others {
+.jC,
+.yC,
+.nC,
+.aC,
+.nbC,
+.oC {
     display: none;
 }
 
@@ -133,6 +133,14 @@ body {
     animation-name: fadein;
 }
 
+.visible {
+    display: flex;
+}
+
+.active {
+    text-decoration: underline;
+}
+
 .secondary {
     display: none;
     width: 1500px;
@@ -148,8 +156,7 @@ body {
     flex-direction: column;
 }
 
-.jordanC {
-    display: flex;
+.jC {
     width: calc(100% - 700px);
     flex-flow: column wrap;
 }
