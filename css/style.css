@@ -201,13 +201,13 @@ body {
     margin-bottom: 8px;
 }
 
-a {
+.menuitem {
     text-decoration: none;
     color: black;
     transition: 0.5s;
 }
 
-a:hover {
+.menuitem:hover {
     color: rgb(179, 179, 179);
 }
 
@@ -222,5 +222,14 @@ ul li {
 }
 
 li:hover {
+    cursor: pointer;
+}
+
+/* Main */
+
+.more {
+    background: black;
+    color: white;
+    padding: 15px 25px;
     cursor: pointer;
 }
