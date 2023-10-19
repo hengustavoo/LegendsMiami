@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Legends Miami</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"> </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"></script>
     <script src="./index.js"></script>
   </head>
   <body>
@@ -12,137 +12,291 @@
     <div class="fixeds"></div>
     <!-- Header -->
     <section class="header">
-
-        <div class="searchDiv">
-          <form class="searchBox">
-            <a class="searchBtn" href="#">
-              <img src="imgs/lupa.svg" alt="lupa" width="25px" />
-            </a>
-            <input type="text" class="searchText" placeholder="Procurar produtos..."/>
-          </form>
-        </div>
-
-        <div class="logo">
-          <a href="#">
-            <img src="imgs/logoLM.png" alt="legends miami" href="index.html"/>
+      <div class="searchDiv">
+        <form class="searchBox">
+          <a class="searchBtn" href="#">
+            <img src="imgs/lupa.svg" alt="lupa" width="25px" />
           </a>
-        </div>
+          <input
+            type="text"
+            class="searchText"
+            placeholder="Procurar produtos..."
+          />
+        </form>
+      </div>
 
-        <div class="menu">
-          <div class="tenis" onmouseover="backWhiteIn()" onmouseout="backWhiteOut()">
-            <span>
-              <a class="menuitem" href="">Tênis</a>
-            </span>
-            <div class="sneakers" onmouseout="backWhiteOut()">
-              <div class="primary">
-                <ul>
-                  <li class="pri jP" onclick="visible('.jC', this)" onmouseover="visible('.jC', this)">Air Jordan</li>
-                  <li class="pri nP" onclick="visible('.nC', this)" onmouseover="visible('.nC', this)">Nike</li>
-                  <li class="pri yP" onclick="visible('.yC', this)" onmouseover="visible('.yC', this)">Yeezy</li>
-                  <li class="pri aP" onclick="visible('.aC', this)" onmouseover="visible('.aC', this)">Adidas</li>
-                  <li onmouseover="subClose()"><a class="menuitem">Off-White</a></li>
-                  <li class="pri nbP" onclick="visible('.nbC', this)" onmouseover="visible('.nbC', this)">New Balance</li>
-                  <li class="pri oP" onclick="visible('.oC', this)" onmouseover="visible('.oC', this)">Outros</li>
-                  <li onmouseover="subClose()"><a class="menuitem">Ofertas</a></li>
-                  <li onmouseover="subClose()"><a class="menuitem">Feminino</a></li>
-                  <li onmouseover="subClose()"><a class="menuitem">Maculino</a></li>
-                  <li onmouseover="subClose()"><a class="menuitem">Infantil</a></li>
-                </ul>
-              </div>
-              <div class="secondary">
-                <ul class="sub jC">
-                  <li><u><a class="menuitem">Air Jordan</a></u></li>
-                  <li><a class="menuitem">Air Jordan 1</a></li>
-                  <li><a class="menuitem">Air Jordan 2</a></li>
-                  <li><a class="menuitem">Air Jordan 3</a></li>
-                  <li><a class="menuitem">Air Jordan 4</a></li>
-                  <li><a class="menuitem">Air Jordan 5</a></li>
-                  <li><a class="menuitem">Air Jordan 6</a></li>
-                  <li><a class="menuitem">Air Jordan 7</a></li>
-                  <li><a class="menuitem">Air Jordan 8</a></li>
-                  <li><a class="menuitem">Air Jordan 9</a></li>
-                  <li><a class="menuitem">Air Jordan 10</a></li>
-                  <li><a class="menuitem">Air Jordan 11</a></li>
-                  <li><a class="menuitem">Air Jordan 12</a></li>
-                  <li><a class="menuitem">Air Jordan 13</a></li>
-                  <li><a class="menuitem">Air Jordan 14</a></li>
-                  <li><a class="menuitem">Lançamentos</a></li>
-                </ul>
-                <ul class="sub nC">
-                  <li><u><a class="menuitem">Nike</a></u></li>
-                  <li><a class="menuitem">Off-White</a></li>
-                  <li><a class="menuitem">Dunk</a></li>
-                  <li><a class="menuitem">Air Max</a></li>
-                  <li><a class="menuitem">Air Force 1</a></li>
-                  <li><a class="menuitem">Blazer</a></li>
-                  <li><a class="menuitem">Foamposite</a></li>
-                  <li><a class="menuitem">Vapormax</a></li>
-                  <li><a class="menuitem">Kobe</a></li>
-                  <li><a class="menuitem">LeBron</a></li>
-                  <li><a class="menuitem">Lançamentos</a></li>
-                </ul>
-                <ul class="sub yC">
-                  <li><u><a class="menuitem">Yeezy</a></u></li>
-                  <li><a class="menuitem">Yeezy Boost 350</a></li>
-                  <li><a class="menuitem">Yeezy Boost 380</a></li>
-                  <li><a class="menuitem">Yeezy Boost 500</a></li>
-                  <li><a class="menuitem">Yeezy Boost 700</a></li>
-                  <li><a class="menuitem">Yeezy Boost 750</a></li>
-                  <li><a class="menuitem">Adidas Yeezy</a></li>
-                  <li><a class="menuitem">Nike Yeezy</a></li>
-                  <li><a class="menuitem">Yeezy Slides</a></li>
-                  <li><a class="menuitem">Yeezy Foam Runner</a></li>
-                </ul>
-                <ul class="sub aC">
-                  <li><u><a class="menuitem">Adidas</a></u></li>
-                  <li><a class="menuitem">Yeezy</a></li>
-                  <li><a class="menuitem">Pharrell</a></li>
-                  <li><a class="menuitem">NMD</a></li>
-                  <li><a class="menuitem">Ultra Boost</a></li>
-                  <li><a class="menuitem">Lançamentos</a></li>
-                </ul>
-                <ul class="sub nbC">
-                  <li><u><a class="menuitem">New Balance</a></u></li>
-                  <li><a class="menuitem">New Balance 327</a></li>
-                  <li><a class="menuitem">New Balance 550</a></li>
-                  <li><a class="menuitem">New Balance 990</a></li>
-                </ul>
-                <ul class="sub oC">
-                  <li><u><a class="menuitem">Outros</a></u></li>
-                  <li><a class="menuitem">Asics</a></li>
-                  <li><a class="menuitem">Bape</a></li>
-                  <li><a class="menuitem">Converse</a></li>
-                  <li><a class="menuitem">Puma</a></li>
-                  <li><a class="menuitem">Reebok</a></li>
-                  <li><a class="menuitem">Vans</a></li>
-                </ul>
-              </div>
+      <div class="logo">
+        <a href="#">
+          <img src="imgs/logoLM.png" alt="legends miami" href="index.html" />
+        </a>
+      </div>
+
+      <div class="menu">
+        <div
+          class="tenis"
+          onmouseover="backWhiteIn()"
+          onmouseout="backWhiteOut()"
+        >
+          <span>
+            <a class="menuitem" href="">Tênis</a>
+          </span>
+          <div class="sneakers" onmouseout="backWhiteOut()">
+            <div class="primary">
+              <ul>
+                <li
+                  class="pri jP"
+                  onclick="visible('.jC', this)"
+                  onmouseover="visible('.jC', this)"
+                >
+                  Air Jordan
+                </li>
+                <li
+                  class="pri nP"
+                  onclick="visible('.nC', this)"
+                  onmouseover="visible('.nC', this)"
+                >
+                  Nike
+                </li>
+                <li
+                  class="pri yP"
+                  onclick="visible('.yC', this)"
+                  onmouseover="visible('.yC', this)"
+                >
+                  Yeezy
+                </li>
+                <li
+                  class="pri aP"
+                  onclick="visible('.aC', this)"
+                  onmouseover="visible('.aC', this)"
+                >
+                  Adidas
+                </li>
+                <li onmouseover="subClose()">
+                  <a class="menuitem">Off-White</a>
+                </li>
+                <li
+                  class="pri nbP"
+                  onclick="visible('.nbC', this)"
+                  onmouseover="visible('.nbC', this)"
+                >
+                  New Balance
+                </li>
+                <li
+                  class="pri oP"
+                  onclick="visible('.oC', this)"
+                  onmouseover="visible('.oC', this)"
+                >
+                  Outros
+                </li>
+                <li onmouseover="subClose()">
+                  <a class="menuitem">Ofertas</a>
+                </li>
+                <li onmouseover="subClose()">
+                  <a class="menuitem">Feminino</a>
+                </li>
+                <li onmouseover="subClose()">
+                  <a class="menuitem">Maculino</a>
+                </li>
+                <li onmouseover="subClose()">
+                  <a class="menuitem">Infantil</a>
+                </li>
+              </ul>
+            </div>
+            <div class="secondary">
+              <ul class="sub jC">
+                <li>
+                  <u><a class="menuitem">Air Jordan</a></u>
+                </li>
+                <li><a class="menuitem">Air Jordan 1</a></li>
+                <li><a class="menuitem">Air Jordan 2</a></li>
+                <li><a class="menuitem">Air Jordan 3</a></li>
+                <li><a class="menuitem">Air Jordan 4</a></li>
+                <li><a class="menuitem">Air Jordan 5</a></li>
+                <li><a class="menuitem">Air Jordan 6</a></li>
+                <li><a class="menuitem">Air Jordan 7</a></li>
+                <li><a class="menuitem">Air Jordan 8</a></li>
+                <li><a class="menuitem">Air Jordan 9</a></li>
+                <li><a class="menuitem">Air Jordan 10</a></li>
+                <li><a class="menuitem">Air Jordan 11</a></li>
+                <li><a class="menuitem">Air Jordan 12</a></li>
+                <li><a class="menuitem">Air Jordan 13</a></li>
+                <li><a class="menuitem">Air Jordan 14</a></li>
+                <li><a class="menuitem">Lançamentos</a></li>
+              </ul>
+              <ul class="sub nC">
+                <li>
+                  <u><a class="menuitem">Nike</a></u>
+                </li>
+                <li><a class="menuitem">Off-White</a></li>
+                <li><a class="menuitem">Dunk</a></li>
+                <li><a class="menuitem">Air Max</a></li>
+                <li><a class="menuitem">Air Force 1</a></li>
+                <li><a class="menuitem">Blazer</a></li>
+                <li><a class="menuitem">Foamposite</a></li>
+                <li><a class="menuitem">Vapormax</a></li>
+                <li><a class="menuitem">Kobe</a></li>
+                <li><a class="menuitem">LeBron</a></li>
+                <li><a class="menuitem">Lançamentos</a></li>
+              </ul>
+              <ul class="sub yC">
+                <li>
+                  <u><a class="menuitem">Yeezy</a></u>
+                </li>
+                <li><a class="menuitem">Yeezy Boost 350</a></li>
+                <li><a class="menuitem">Yeezy Boost 380</a></li>
+                <li><a class="menuitem">Yeezy Boost 500</a></li>
+                <li><a class="menuitem">Yeezy Boost 700</a></li>
+                <li><a class="menuitem">Yeezy Boost 750</a></li>
+                <li><a class="menuitem">Adidas Yeezy</a></li>
+                <li><a class="menuitem">Nike Yeezy</a></li>
+                <li><a class="menuitem">Yeezy Slides</a></li>
+                <li><a class="menuitem">Yeezy Foam Runner</a></li>
+              </ul>
+              <ul class="sub aC">
+                <li>
+                  <u><a class="menuitem">Adidas</a></u>
+                </li>
+                <li><a class="menuitem">Yeezy</a></li>
+                <li><a class="menuitem">Pharrell</a></li>
+                <li><a class="menuitem">NMD</a></li>
+                <li><a class="menuitem">Ultra Boost</a></li>
+                <li><a class="menuitem">Lançamentos</a></li>
+              </ul>
+              <ul class="sub nbC">
+                <li>
+                  <u><a class="menuitem">New Balance</a></u>
+                </li>
+                <li><a class="menuitem">New Balance 327</a></li>
+                <li><a class="menuitem">New Balance 550</a></li>
+                <li><a class="menuitem">New Balance 990</a></li>
+              </ul>
+              <ul class="sub oC">
+                <li>
+                  <u><a class="menuitem">Outros</a></u>
+                </li>
+                <li><a class="menuitem">Asics</a></li>
+                <li><a class="menuitem">Bape</a></li>
+                <li><a class="menuitem">Converse</a></li>
+                <li><a class="menuitem">Puma</a></li>
+                <li><a class="menuitem">Reebok</a></li>
+                <li><a class="menuitem">Vans</a></li>
+              </ul>
             </div>
           </div>
-          <a class="menuitem" href="apparel.html">Vestuário</a>
-          <a class="menuitem" href="">Outros</a>
-          <div class="account">
-              <span>
-                <a href="signup.html" id="account" class="menuitem">Conta</a>
-              </span>
-              <div class="account2">
-                <a class="menuitem" href="">Minha conta</a>
-                <a class="menuitem" href="">Meu carrinho</a>
-                <a class="menuitem" href="">Suporte</a>
-                <a class="menuitem" href="signup.html">Entrar</a>
-              </div>
-            </div>
         </div>
-        
+        <a class="menuitem" href="apparel.html">Vestuário</a>
+        <a class="menuitem" href="">Outros</a>
+        <div class="account">
+          <span>
+            <a href="signup.html" id="account" class="menuitem">Conta</a>
+          </span>
+          <div class="account2">
+            <a class="menuitem" href="">Minha conta</a>
+            <a class="menuitem" href="">Meu carrinho</a>
+            <a class="menuitem" href="">Suporte</a>
+            <a class="menuitem" href="signup.html">Entrar</a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Main -->
     <section class="main" onmouseover="subClose()">
       <div class="banner">
-        <img src="imgs/jordan.jpg" alt="jordan" style="width: 100%;">
+        <img src="imgs/jordan.jpg" alt="jordan" style="width: 100%" />
       </div>
       <div class="highlights">
+        <div class="hlTitle">
+          <h1>Destaques</h1>
+        </div>
         <div class="hl">
-
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/371551/1.jpg" alt="Satin Bred">
+              </div>
+              <div class="name">
+                <span>Air Jordan</span>
+                <p>Wmns Air Jordan 1 Retro High OG 'Satin Bred' 2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/376331/1.jpg" alt="Faded Spruce">
+              </div>
+              <div class="name">
+                <span>Nike</span>
+                <p>Cactus Plant Flea Market x Air Flea 2 'Faded Spruce'</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/376329/1.jpg" alt="Black Alabaster">
+              </div>
+              <div class="name">
+                <span>Nike</span>
+                <p>Cactus Plant Flea Market x Air Flea 2 'Black Alabaster'</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/371719/1.jpg" alt="Mauve">
+              </div>
+              <div class="name">
+                <span>Air Jordan</span>
+                <p>Air Jordan 1 Retro High OG 'Mauve'</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/374130/1.jpg" alt="Neutral Olive">
+              </div>
+              <div class="name">
+                <span>Air Jordan</span>
+                <p>Travis Scott x Air Jordan 1 Low Golf 'Neutral Olive'</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/356780/1.jpg" alt="Aqua">
+              </div>
+              <div class="name">
+                <span>Air Jordan</span>
+                <p>Air Jordan 6 Retro 'Aqua'</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/345070/1.jpg" alt="Playoff 2023">
+              </div>
+              <div class="name">
+                <span>Air Jordan</span>
+                <p>Air Jordan 8 Retro 'Playoff' 2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="hlProduct">
+              <div class="pic">
+                <img src="https://cdn.flightclub.com/750/TEMPLATE/355545/1.jpg" alt="One Block at a Time">
+              </div>
+              <div class="name">
+                <span>Nike</span>
+                <p>Born x Raised x Dunk Low SB<br>'One Block at a Time'</p>
+              </div>
+            </div>
+          </a>
         </div>
         <div class="hlbutton">
           <a class="more"><strong>Ver Mais</strong></a>
