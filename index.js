@@ -13,7 +13,7 @@ function subClose() {
 
 window.addEventListener("scroll", () => {
     let header = document.querySelector(".header")
-    header.classList.toggle('scrolling', window.scrollY > 1080)
+    header.classList.toggle('scrolling', window.scrollY > 990)
 })
 
 // document.querySelector('.pri').addEventListener("onclick", () => {
