@@ -1,37 +1,42 @@
-function backWhiteIn() {
-    $('.header').css('background', 'white')
-    // $('.secondary').css('display', 'none')
-}
+import home from "./pages/home/home.js"
+import sneakers from "./pages/sneakers/sneakers.js"
 
-function backWhiteOut() {
-    $('.header').css('background', 'transparent')
-}
+const main = document.querySelector('.main')
 
-function subClose() {
-    $('.secondary').css('display' ,'none')
-}
-
-window.addEventListener("scroll", () => {
-    let header = document.querySelector(".header")
-    header.classList.toggle('scrolling', window.scrollY > 990)
+window.addEventListener("load", () => {
+    main.appendChild(home())
 })
 
-// document.querySelector('.pri').addEventListener("onclick", () => {
-//     let divs = document.querySelectorAll('.pri')
-//     divs.forEach(e => {
-//         if (e.classList.contains('active') == true) {
-//             e.classList.remove('active')
-//         }
-//     })
-//     document.querySelector('pri').classList.add('active')
-// })
-
-function visible(x) {
-    const divs = document.querySelectorAll('.sub')
-    const div = document.querySelector(x)
-    divs.forEach(e => {
-        if (e.classList.contains('visible') == true) e.classList.remove('visible')
+const init = () => {
+    window.addEventListener("hashchange", () => {
+        main.innerHTML = ""
+        switch(window.location.hash){
+            case "":
+                main.appendChild(home())
+                break
+            case "#sneakers":
+                main.appendChild(sneakers())
+                break
+            default:
+                main.appendChild(home())
+        }
     })
-    $('.secondary').css('display' ,'flex')
-    div.classList.add('visible')
+}
+
+{
+    const tenis = document.querySelector('.tenis')
+    if(window.location.hash == "") {
+        tenis.setAttribute('onmouseover', 'backWhiteIn()')
+        tenis.setAttribute('onmouseout', 'backWhiteOut()')
+        document.querySelector('.sneakers').setAttribute('onmouseout', 'backWhiteOut()')
+        window.addEventListener("scroll", () => {
+            let header = document.querySelector('.header')
+            header.classList.toggle('scrolling', window.scrollY > 990)
+        })
+    } else {
+        $('.header').css('background', 'white')
+        tenis.removeAttribute('onmouseover')
+        tenis.removeAttribute('onmouseout')
+        document.querySelector('.sneakers').removeAttribute('onmouseout')
+    }
 }
