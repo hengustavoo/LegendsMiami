@@ -1,42 +1,26 @@
-import home from "./pages/home/home.js"
-import sneakers from "./pages/sneakers/sneakers.js"
-
-const main = document.querySelector('.main')
-
-window.addEventListener("load", () => {
-    main.appendChild(home())
+window.addEventListener("scroll", () => {
+    let header = document.querySelector('.header')
+    header.classList.toggle('scrolling', window.scrollY > 990)
 })
 
-const init = () => {
-    window.addEventListener("hashchange", () => {
-        main.innerHTML = ""
-        switch(window.location.hash){
-            case "":
-                main.appendChild(home())
-                break
-            case "#sneakers":
-                main.appendChild(sneakers())
-                break
-            default:
-                main.appendChild(home())
-        }
-    })
+function backWhiteIn() {
+    $('.header').css('background', 'white')
 }
 
-{
-    const tenis = document.querySelector('.tenis')
-    if(window.location.hash == "") {
-        tenis.setAttribute('onmouseover', 'backWhiteIn()')
-        tenis.setAttribute('onmouseout', 'backWhiteOut()')
-        document.querySelector('.sneakers').setAttribute('onmouseout', 'backWhiteOut()')
-        window.addEventListener("scroll", () => {
-            let header = document.querySelector('.header')
-            header.classList.toggle('scrolling', window.scrollY > 990)
-        })
-    } else {
-        $('.header').css('background', 'white')
-        tenis.removeAttribute('onmouseover')
-        tenis.removeAttribute('onmouseout')
-        document.querySelector('.sneakers').removeAttribute('onmouseout')
-    }
+function backWhiteOut() {
+    $('.header').css('background', 'transparent')
+}
+
+function subClose() {
+    $('.secondary').css('display' ,'none')
+}
+
+function visible(x) {
+    const divs = document.querySelectorAll('.sub')
+    const div = document.querySelector(x)
+    divs.forEach(e => {
+        if (e.classList.contains('visible') == true) e.classList.remove('visible')
+    })
+    $('.secondary').css('display' ,'flex')
+    div.classList.add('visible')
 }
