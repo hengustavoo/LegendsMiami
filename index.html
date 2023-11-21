@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Legends Miami</title>
-    <link rel="shortcut icon" href="./imgs/IconM.png" type="icon">
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"></script>
-    <script src="./js/functions.js"></script>
-    <script src="./index.js"></script>
-  </head>
-  <body>
-    <!-- Fixeds -->
-    <div class="fixeds"></div>
-    <!-- Header -->
-    <section class="header">
-      <div class="searchDiv">
-        <form class="searchBox">
-          <a class="searchBtn" href="#home">
-            <img src="imgs/lupa.svg" alt="lupa" width="25px" />
-          </a>
-          <input
-            type="text"
-            class="searchText"
-            placeholder="Procurar produtos..."
-          />
-        </form>
-      </div>
 
-      <div class="logo">
-        <a href="#">
-          <img src="imgs/logoLM.png" alt="legends miami" href="index.html" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Legends Miami</title>
+  <link rel="shortcut icon" href="./imgs/IconM.png" type="icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css">
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.3.min.js"></script>
+  <script src="./js/functions.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <!-- Fixeds -->
+  <div class="fixeds"></div>
+  <!-- Header -->
+  <section class="header">
+    <div class="searchDiv">
+      <form class="searchBox">
+        <a class="searchBtn" href="#home">
+          <img src="imgs/lupa.svg" alt="lupa" width="25px" />
         </a>
-      </div>
+        <input type="text" class="searchText" placeholder="Procurar produtos..." />
+      </form>
+    </div>
 
-      <div class="menu">
+    <div class="logo">
+      <a href="#">
+        <img src="imgs/logoLM.png" alt="legends miami" href="index.html" />
+      </a>
+    </div>
+
+    <div class="menu">
+      <div class="contain1">
+        
+      </div>
+      <div class="contain2">
         <div class="tenis" onmouseover="backWhiteIn()" onmouseout="backWhiteOut()">
           <span>
             <a class="menuitem" href="#sneakers">Tênis</a>
@@ -41,49 +44,25 @@
           <div class="sneakers" onmouseout="backWhiteOut()">
             <div class="primary">
               <ul>
-                <li
-                  class="pri jP"
-                  onclick="visible('.jC', this)"
-                  onmouseover="visible('.jC', this)"
-                >
+                <li class="pri jP" onclick="visible('.jC', this)" onmouseover="visible('.jC', this)">
                   Air Jordan
                 </li>
-                <li
-                  class="pri nP"
-                  onclick="visible('.nC', this)"
-                  onmouseover="visible('.nC', this)"
-                >
+                <li class="pri nP" onclick="visible('.nC', this)" onmouseover="visible('.nC', this)">
                   Nike
                 </li>
-                <li
-                  class="pri yP"
-                  onclick="visible('.yC', this)"
-                  onmouseover="visible('.yC', this)"
-                >
+                <li class="pri yP" onclick="visible('.yC', this)" onmouseover="visible('.yC', this)">
                   Yeezy
                 </li>
-                <li
-                  class="pri aP"
-                  onclick="visible('.aC', this)"
-                  onmouseover="visible('.aC', this)"
-                >
+                <li class="pri aP" onclick="visible('.aC', this)" onmouseover="visible('.aC', this)">
                   Adidas
                 </li>
                 <li onmouseover="subClose()">
                   <a class="menuitem">Off-White</a>
                 </li>
-                <li
-                  class="pri nbP"
-                  onclick="visible('.nbC', this)"
-                  onmouseover="visible('.nbC', this)"
-                >
+                <li class="pri nbP" onclick="visible('.nbC', this)" onmouseover="visible('.nbC', this)">
                   New Balance
                 </li>
-                <li
-                  class="pri oP"
-                  onclick="visible('.oC', this)"
-                  onmouseover="visible('.oC', this)"
-                >
+                <li class="pri oP" onclick="visible('.oC', this)" onmouseover="visible('.oC', this)">
                   Outros
                 </li>
                 <li onmouseover="subClose()">
@@ -196,136 +175,121 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Main -->
-    <section class="main" onmouseover="subClose()">
-      <div class="banner">
-        <img src="imgs/jordan.jpg" alt="jordan" style="width: 100%" />
+    </div>
+
+  </section>
+  <!-- Main -->
+  <section class="main" onmouseover="subClose()">
+    <div class="banner">
+      <img src="imgs/jordan.jpg" alt="jordan" style="width: 100%" />
+    </div>
+    <div class="highlights">
+      <div class="hlTitle">
+        <h1>Destaques</h1>
       </div>
-      <div class="highlights">
-        <div class="hlTitle">
-          <h1>Destaques</h1>
-        </div>
-        <div class="hl">
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/371551/1.jpg"
-                  alt="Satin Bred"
-                />
-              </div>
-              <div class="name">
-                <span>Air Jordan</span>
-                <p>Wmns Air Jordan 1 Retro High OG 'Satin Bred' 2023</p>
-              </div>
+      <div class="hl">
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/371551/1.jpg" alt="Satin Bred" />
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/376331/1.jpg"
-                  alt="Faded Spruce"
-                />
-              </div>
-              <div class="name">
-                <span>Nike</span>
-                <p>Cactus Plant Flea Market x Air Flea 2 'Faded Spruce'</p>
-              </div>
+            <div class="name">
+              <span>Air Jordan</span>
+              <p>Wmns Air Jordan 1 Retro High OG 'Satin Bred' 2023</p>
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/376329/1.jpg"
-                  alt="Black Alabaster"
-                />
-              </div>
-              <div class="name">
-                <span>Nike</span>
-                <p>Cactus Plant Flea Market x Air Flea 2 'Black Alabaster'</p>
-              </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/376331/1.jpg" alt="Faded Spruce" />
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/371719/1.jpg"
-                  alt="Mauve"
-                />
-              </div>
-              <div class="name">
-                <span>Air Jordan</span>
-                <p>Air Jordan 1 Retro High OG 'Mauve'</p>
-              </div>
+            <div class="name">
+              <span>Nike</span>
+              <p>Cactus Plant Flea Market x Air Flea 2 'Faded Spruce'</p>
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/374130/1.jpg"
-                  alt="Neutral Olive"
-                />
-              </div>
-              <div class="name">
-                <span>Air Jordan</span>
-                <p>Travis Scott x Air Jordan 1 Low Golf 'Neutral Olive'</p>
-              </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/376329/1.jpg" alt="Black Alabaster" />
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/356780/1.jpg"
-                  alt="Aqua"
-                />
-              </div>
-              <div class="name">
-                <span>Air Jordan</span>
-                <p>Air Jordan 6 Retro 'Aqua'</p>
-              </div>
+            <div class="name">
+              <span>Nike</span>
+              <p>Cactus Plant Flea Market x Air Flea 2 'Black Alabaster'</p>
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/345070/1.jpg"
-                  alt="Playoff 2023"
-                />
-              </div>
-              <div class="name">
-                <span>Air Jordan</span>
-                <p>Air Jordan 8 Retro 'Playoff' 2023</p>
-              </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/371719/1.jpg" alt="Mauve" />
             </div>
-          </a>
-          <a href="">
-            <div class="hlProduct">
-              <div class="pic">
-                <img
-                  src="https://cdn.flightclub.com/750/TEMPLATE/355545/1.jpg"
-                  alt="One Block at a Time"
-                />
-              </div>
-              <div class="name">
-                <span>Nike</span>
-                <p>Born x Raised x Dunk Low SB<br />'One Block at a Time'</p>
-              </div>
+            <div class="name">
+              <span>Air Jordan</span>
+              <p>Air Jordan 1 Retro High OG 'Mauve'</p>
             </div>
-          </a>
-        </div>
-        <div class="hlbutton">
-          <a class="more"><strong>Ver Mais</strong></a>
-        </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/374130/1.jpg" alt="Neutral Olive" />
+            </div>
+            <div class="name">
+              <span>Air Jordan</span>
+              <p>Travis Scott x Air Jordan 1 Low Golf 'Neutral Olive'</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/356780/1.jpg" alt="Aqua" />
+            </div>
+            <div class="name">
+              <span>Air Jordan</span>
+              <p>Air Jordan 6 Retro 'Aqua'</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/345070/1.jpg" alt="Playoff 2023" />
+            </div>
+            <div class="name">
+              <span>Air Jordan</span>
+              <p>Air Jordan 8 Retro 'Playoff' 2023</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="hlProduct">
+            <div class="pic">
+              <img src="https://cdn.flightclub.com/750/TEMPLATE/355545/1.jpg" alt="One Block at a Time" />
+            </div>
+            <div class="name">
+              <span>Nike</span>
+              <p>Born x Raised x Dunk Low SB<br />'One Block at a Time'</p>
+            </div>
+          </div>
+        </a>
       </div>
-    </section>
-    <!-- Footer -->
-    <section class="footer"></section>
-  </body>
+      <div class="hlbutton">
+        <a class="more"><strong>Ver Mais</strong></a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="footer">
+    <div class="leftFooter">
+      <span>Sobre nós</span>
+    </div>
+    <div class="centerFooter"></div>
+    <div class="rightFooter"></div>
+  </section>
+</body>
+
 </html>
