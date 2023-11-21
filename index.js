@@ -1,7 +1,6 @@
 window.addEventListener("scroll", () => {
     let header = document.querySelector('.header')
-    let img = $('.banner').height()
-    header.classList.toggle('scrolling', window.scrollY > img)
+    header.classList.toggle('scrolling', window.scrollY > $('.banner').height())
 })
 
 function backWhiteIn() {
