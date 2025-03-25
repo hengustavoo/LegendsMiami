@@ -1,5 +1,5 @@
 export default () => {
-    const container = document.querySelector('.main')
+    const container = document.querySelector('.main1')
     const template = `  <div class="highlights">
                             <div class="hlTitle">
                             <h1>Destaques</h1>
