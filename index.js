@@ -24,3 +24,11 @@ function visible(x) {
     $('.secondary').css('display' ,'flex')
     div.classList.add('visible')
 }
+
+function account() {
+    if (document.getElementById('account').textContent === 'Conta') {
+        window.location.href = 'signup.html'
+    } else {
+        window.location.href = 'profile.html'
+    }
+}
