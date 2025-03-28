@@ -1,0 +1,24 @@
+{
+  "name": "sitelegendsmiami",
+  "version": "1.0.0",
+  "description": "Site de comercio de tênis.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengustavoo/SiteLegendsMiami.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hengustavoo/SiteLegendsMiami/issues"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "homepage": "https://github.com/hengustavoo/SiteLegendsMiami#readme"
+}
