@@ -1,6 +1,7 @@
 window.addEventListener("scroll", () => {
     let header = document.querySelector('.header')
     header.classList.toggle('scrolling', window.scrollY > $('.banner').height())
+    console.log('rodou')
 })
 
 function backWhiteIn() {
