@@ -1,30 +1,64 @@
+const express = require('express');
 const path = require('path');
-const app = express();
-const mysql = require('mysql2/promise');
+const mysql = require('mysql2');
 
-const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'mysql_db',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_USER_PASSWORD || '1212',
-  database: process.env.DB_NAME || 'legends'
+const app = express();
+const PORT = 3000;
+
+const db = mysql.createConnection({
+  host: '168.75.109.128',
+  user: 'myroot',
+  password: '1212',
+  database: 'portifolio',
+  port: 3306
+});
+
+db.connect(err => {
+  if (err) {
+    console.error('Erro ao conectar no MySQL:', err);
+  } else {
+    console.log('Conectado ao MySQL!');
+  }
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/api/projetos', async (req, res) => {
-  try {
-    const [rows] = await pool.query('SELECT * FROM projetos');
-    res.json(rows);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
+app.get('/api/projetos', (req, res) => {
+  console.log('Rota /api/projetos chamada...');
+
+  db.query('SELECT * FROM projetos', (err, results) => {
+    if (err) {
+      console.error('❌ ERRO AO CONSULTAR PROJETOS:');
+      console.error(err);
+      return res.status(500).json({ erro: 'Erro ao buscar projetos' });
+    }
+
+    console.log('Consulta realizada com sucesso!');
+    console.log(results);
+    res.json(results);
+  });
 });
 
-app.get('*', (req, res) => {
+app.get('/api/recados', (req, res) => {
+  console.log('Rota /api/recados chamada...');
+
+  db.query('SELECT * FROM recados', (err, results) => {
+    if (err) {
+      console.error('❌ ERRO AO CONSULTAR RECADOS:');
+      console.error(err);
+      return res.status(500).json({ erro: 'Erro ao buscar recados' });
+    }
+
+    console.log('Consulta realizada com sucesso!');
+    console.log(results);
+    res.json(results);
+  });
+});
+
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+  console.log(`App rodando em http://localhost:${PORT}`);
 });
